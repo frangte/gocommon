@@ -8,7 +8,7 @@ import (
 
 // LoadOrInit loads environment variables into a struct
 // and initializes it if it's nil.
-func LoadOrInit[T any](t *T) (*T, error) {
+func Loads[T any](t *T) (*T, error) {
 	if t == nil {
 		t = new(T)
 	}

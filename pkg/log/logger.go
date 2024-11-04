@@ -96,6 +96,10 @@ func Log(level string, msg string, fields ...Field) {
 	ins.z.Log(mapLevel[level], msg, fields...)
 }
 
+func Sync() {
+	ins.z.Sync()
+}
+
 func createLogger(conf Config) *zap.Logger {
 	level := zap.NewAtomicLevelAt(mapLevel[conf.Level])
 	var zapCore zapcore.Core
