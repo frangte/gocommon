@@ -50,7 +50,7 @@ var (
 )
 
 func init() {
-	conf, err := xenv.LoadOrInit[Config](nil)
+	conf, err := xenv.Loads[Config](nil)
 	if err != nil {
 		panic(err)
 	}
