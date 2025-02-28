@@ -17,7 +17,7 @@ type (
 		AppName string `env:"LOG_APP_NAME" default:"sinbadgo"`
 		Level   string `env:"LOG_LEVEL" default:"info"`
 		LogDir  string `env:"LOG_DIR" default:"logs"`
-		LogMode string `env:"LOG_MODE" default:"production"`
+		LogMode string `env:"LOG_MODE" default:"development"`
 	}
 
 	logger struct {
