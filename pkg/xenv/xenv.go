@@ -6,8 +6,6 @@ import (
 	env "github.com/caarlos0/env/v11"
 )
 
-// LoadOrInit loads environment variables into a struct
-// and initializes it if it's nil.
 func Loads[T any](t *T) (*T, error) {
 	if t == nil {
 		t = new(T)
